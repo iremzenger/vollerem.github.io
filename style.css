@@ -1,0 +1,100 @@
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  grid-template-areas: "solcontent sagcontent";
+  margin: 20px;
+}
+.solcontent {
+  grid-area: solcontent;
+}
+.mac {
+  display: grid;
+  width: 98%;
+  grid-template-columns: 0.9fr 0 0.1fr 1.1fr 0 0.1fr;
+  gap: 10px;
+  grid-template-areas:
+    "tarih evlogo evad evskor"
+    "tarih deplogo depad depskor";
+  background-color: rgb(133, 133, 133);
+  margin: 10px;
+  padding: 10px;
+}
+.tarih {
+  grid-area: tarih;
+  grid-column: 1/2;
+  color: #fff;
+  justify-content: center;
+}
+.evlogo {
+  grid-area: evlogo;
+  grid-column: 2/3;
+  color: #fff;
+}
+.evad {
+  grid-area: evad;
+  grid-column: 4/5;
+  color: #fff;
+}
+.deplogo {
+  grid-area: deplogo;
+  grid-column: 2/3;
+  color: #fff;
+}
+.depad {
+  grid-area: depad;
+  grid-column: 4/5;
+  color: #fff;
+}
+.evskor {
+  grid-area: evskor;
+  grid-column: 6;
+  color: #fff;
+}
+.depskor {
+  grid-area: depskor;
+  grid-column: 6;
+  color: #fff;
+}
+.maclogo {
+  width: 20px;
+  height: 20px;
+}
+.sagcontent {
+  grid-area: sagcontent;
+  height: 100%;
+}
+.puantable > div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d2d1d1;
+}
+.daha-fazla-link {
+  display: block;
+  width: 100px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px;
+  float: right;
+  margin-right: 10px;
+}
+
+.sira {
+  flex-basis: 25%;
+}
+.logo {
+  flex-basis: 10%;
+}
+.ad {
+  flex-basis: 55%;
+}
+.puan {
+  flex-basis: 10%;
+}
+@media (max-width: 768px) {
+  .content {
+    display: block;
+    gap: 25px;
+  }
+}
