@@ -1,100 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>VOLLEREM</title>
+    <link rel="stylesheet" href="denemestyle.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        *{
-            box-sizing: border-box;
-            margin:0;
-            padding:0;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex:wrap;
-        }
-
-        .first-container {
-            width: 70%;
-            text-align: center;
-        }
-
-        .second-container {
-            width: 30%;
-            text-align: center;
-        }
-
-        .match {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 10px 0;
-        }
-
-        .match-info {
-            display: flex;
-            align-items: center;
-        }
-
-        .date-time {
-            margin-right: 20px;
-        }
-
-        .team {
-            display: flex;
-            align-items: center;
-        }
-
-        .team-logo {
-            height: 30px;
-            margin-right: 10px;
-        }
-
-        .team-name {
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .separator {
-            font-size: 20px;
-            margin-left: 50px;
-            display: block;
-        }
-        .ecz   {
-            text-decoration: none;
-        }
-        .container::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-        @media only screen and (max-width: 768px) {
-   #collapsibleNavbar .first-container .second-container{
-        flex-direction:column;
-    }
-}
-    </style>
-
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  </head>
+  <body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/handebaladinlogoo.png" alt="logo">
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto ">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">Anasayfa</a>
+                        <a class="nav-link" 
+                            href="deneme.html">Anasayfa</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Milli
@@ -137,474 +64,275 @@
                             <li><a class="dropdown-item" href="#">2. Lig Erkekler</a></li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
-
-
     <h1 style="margin-top: 180px; text-align: center; color: orangered;">Anasayfa</h1>
-    <div class="container">
-        <div class="first-container ">
-            <div class="matches-container">
-                <h3>Gelecek Maçlar</h3>
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">24.10 17.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/galatasaray.png" alt="gslogo" class="team-logo">
-                                <div class="team-name">Galataray Daikin</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/sarıyer.png" alt="sabldlogo" class="team-logo">
-                                <div class="team-name">Sarıyer Belediyesi</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">25.10 19.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/vakifbank.png" alt="gslogo" class="team-logo">
-                                <div class="team-name">VakıfBank</div>
-                            </div>
-                            <div class="team">
-                                <a class="ecz" href="eczaci.html">
-                                    <img src="images/eczacı/esk-logo.png" alt="sabldlogo" class="team-logo">
-                                </a>
-                                <div class="team-name"><a class="ecz" href="eczaci.html">Eczacıbaşı</a></div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">28.10 14.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/galatasaray.png" alt="gslogo" class="team-logo">
-                                <div class="team-name">Galatasaray Daikin</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/ptt.webp" alt="pttlogo" class="team-logo">
-                                <div class="team-name">PTT</div>
-                            </div>
-                        </div>
-
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">28.10 15.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/nilufer.webp" alt="nilulogo" class="team-logo">
-                                <div class="team-name">Nilüfer</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/sarıyer.png" alt="sabldlogo" class="team-logo">
-                                <div class="team-name">Sarıyer Belediyesi</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">28.10 16.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/kara.png" alt="karalogo" class="team-logo">
-                                <div class="team-name">Karayolları</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/fenerbahce.png" alt="fenerlogo" class="team-logo">
-                                <div class="team-name">Fenerbahçe</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">28.10 17.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/besiktas.png" alt="beslogo" class="team-logo">
-                                <div class="team-name">Beşiktaş</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/thy.png" alt="thylogo" class="team-logo">
-                                <div class="team-name">THY</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">28.10 18.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/kuzeyboru.webp" alt="kuzeylogo" class="team-logo">
-                                <div class="team-name">Kuzeyboru</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/aydin.webp" alt="aydinlogo" class="team-logo">
-                                <div class="team-name">Aydın</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">28.10 18.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/murat.webp" alt="gslogo" class="team-logo">
-                                <div class="team-name">Muratpaşa</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/vakifbank.png" alt="sabldlogo" class="team-logo">
-                                <div class="team-name">VakıfBank</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">28.10 19.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <a class="ecz" href="eczaci.html">
-                                    <img src="images/eczacı/esk-logo.png" alt="sabldlogo" class="team-logo">
-                                </a>
-                                <div class="team-name"><a class="ecz" href="eczaci.html">Eczacıbaşı</a></div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/cukurova.webp" alt="sabldlogo" class="team-logo">
-                                <div class="team-name">Çukurova</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">31.10 14.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/vakifbank.png" alt="vakiflogo" class="team-logo">
-                                <div class="team-name">VakıfBank</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/nilufer.webp" alt="nilulogo" class="team-logo">
-                                <div class="team-name">Nilüfer</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">31.10 15.30</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/thy.png" alt="vakiflogo" class="team-logo">
-                                <div class="team-name">THY</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/galatasaray.png" alt="nilulogo" class="team-logo">
-                                <div class="team-name">Galatasaray</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">31.10 16.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/ptt.webp" alt="vakiflogo" class="team-logo">
-                                <div class="team-name">PTT</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/murat.webp" alt="nilulogo" class="team-logo">
-                                <div class="team-name">Muratpaşa</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">31.10 17.30</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/cukurova.webp" alt="vakiflogo" class="team-logo">
-                                <div class="team-name">Çukurova</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/sarıyer.png" alt="nilulogo" class="team-logo">
-                                <div class="team-name">Sarıyer</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">31.10 18.30</div>
-                        <div class="teams">
-                            <div class="team">
-                                <a class="ecz" href="eczaci.html">
-                                    <img src="images/eczacı/esk-logo.png" alt="sabldlogo" class="team-logo">
-                                </a>
-                                <div class="team-name"><a class="ecz" href="eczaci.html">Eczacıbaşı</a></div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/kuzeyboru.webp" alt="kuzeylogo" class="team-logo">
-                                <div class="team-name">Kuzeyboru</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">31.10 19.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/aydin.webp" alt="" class="team-logo">
-                                <div class="team-name">Aydın</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/kara.png" alt="" class="team-logo">
-                                <div class="team-name">Karayolları</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="match">
-                    <div class="match-info">
-                        <div class="date-time">31.10 19.00</div>
-                        <div class="teams">
-                            <div class="team">
-                                <img src="images/diger/fenerbahce.png" alt="" class="team-logo">
-                                <div class="team-name">Fenerbahçe</div>
-                            </div>
-                            <div class="team">
-                                <img src="images/diger/besiktas.png" alt="" class="team-logo">
-                                <div class="team-name">Beşiktaş</div>
-                            </div>
-                        </div>
-                        <div class="separators">
-                            <div class="separator">-</div>
-                            <div class="separator">-</div>
-                        </div>
-                    </div>
-                </div>
-
+    <div class="content">
+      <div class="solcontent">
+        <a href="mac_takvimi.html" class="daha-fazla-link">Daha Fazla</a>
+        <div class="mac">
+          <div class="tarih">12.11 15:00</div>
+          <div class="evlogo">
+            <img src="images/diger/aydin.webp" alt="aydinlogo" class="maclogo" >
+          </div>
+          <div class="evad">Aydın Büyükşehir Bld.</div>
+          <div class="deplogo">
+              <img src="images/diger/galatasarayy.webp" alt="gslogo" class="maclogo">
             </div>
+          <div class="depad">Galatasaray</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
         </div>
-        <div class="second-container ">
-            <div class="points-container">
-                <h3>Puan Tablosu</h3>
-                <table>
-                    <tbody>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>1.</td>
-                            <td style="padding-left: 15px;">
-                                <a class="ecz" href="eczaci.html"><img src="images/eczacı/esk-logo.png" alt="eczlogo" style="height: 30px;"></a>
-                                
-                            </td>
-                            <td><a class="ecz" href="eczaci.html"> Eczacıbaşı Dynavit</a></td>
-                            <td>76p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>2.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/vakifbank.png" alt="vblogo" style="height: 30px;">
-                            </td>
-                            <td>VakıfBank</td>
-                            <td>68p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>3.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/fenerbahce.png" alt="fblogo" style="height: 30px;">
-                            </td>
-                            <td>Fenerbahçe Opet</td>
-                            <td>66p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>4.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/thy.png" alt="thylogo" style="height: 30px;">
-                            </td>
-                            <td>Türk Hava Yolları SK</td>
-                            <td>55p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>5.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/galatasaray.png" alt="gslogo" style="height: 30px;">
-                            </td>
-                            <td>Galatasaray Daikin</td>
-                            <td>50p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>6.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/nilufer.webp" alt="eczlogo" style="height: 30px;">
-                            </td>
-                            <td>Nilüfer Belediyespor</td>
-                            <td>43p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>7.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/sarıyer.png" alt="eczlogo" style="height: 30px;">
-                            </td>
-                            <td>Sarıyer Belediyesi</td>
-                            <td>37p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>8.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/aydin.webp" alt="eczlogo" style="height: 30px;">
-                            </td>
-                            <td>Aydın Büyükşehir Belediyespor</td>
-                            <td>34p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>9.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/cukurova.webp" alt="eczlogo" style="height: 30px;">
-                            </td>
-                            <td>Çukurova Belediyesi Spor Kulübü</td>
-                            <td>30p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>10.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/kuzeyboru.webp" alt="eczlogo" style="height: 30px;">
-                            </td>
-                            <td>Kuzeyboru</td>
-                            <td>27p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>11.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/ptt.webp" alt="eczlogo" style="height: 30px;">
-                            </td>
-                            <td>PTT Spor</td>
-                            <td>26p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>12.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/murat.webp" alt="eczlogo" style="height: 30px;">
-                            </td>
-                            <td>Muratpaşa Bld. Sigorta Shop</td>
-                            <td>21p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>13.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/bolubld.png" alt="eczlogo" style="height: 30px;">
-                            </td>
-                            <td>Bolu Bld.</td>
-                            <td>13p</td>
-                        </tr>
-                        <tr class="top_dotted_line display-flex flex-center-vertical paddingBottom10 paddingTop10">
-                            <td>14.</td>
-                            <td style="padding-left: 15px;">
-                                <img src="images/diger/ilbank.png" alt="eczlogo" style="height: 30px;">
-                            </td>
-                            <td>İlbank</td>
-                            <td>0p</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="mac">
+          <div class="tarih">17.11 14:00</div>
+          <div class="evlogo">
+            <img src="images/diger/vakif.svg" alt="" class="maclogo">
+          </div>
+          <div class="evad">Vakıfbank</div>
+          <div class="deplogo">
+            <img src="images/diger/ptt.webp" alt="" class="maclogo">
+          </div>
+          <div class="depad">Ankara PTT</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
         </div>
+        <div class="mac">
+          <div class="tarih">18.11 13:00</div>
+          <div class="evlogo">
+            <img src="images/diger/kara.png" alt="" class="maclogo">
+          </div>
+          <div class="evad">Karayolları</div>
+          <div class="deplogo">
+            <img src="images/diger/cukurova.webp" alt="" class="maclogo">
+          </div>
+          <div class="depad">Çukurova</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
+        </div>
+        <div class="mac">
+          <div class="tarih">18.11 15:00</div>
+          <div class="evlogo">
+            <img src="images/diger/besiktas.png" alt="" class="maclogo">
+          </div>
+          <div class="evad">Beşiktaş</div>
+          <div class="deplogo">
+            <img src="images/diger/kuzeyboru.webp" alt="" class="maclogo">
+          </div>
+          <div class="depad">Kuzey Boru Gençlik</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
+        </div>
+        <div class="mac">
+          <div class="tarih">18.11 15:00</div>
+          <div class="evlogo">
+            <img src="images/diger/nilufer.webp" alt="" class="maclogo">
+          </div>
+          <div class="evad">Nilüfer Bld.</div>
+          <div class="deplogo">
+            <img src="images/diger/fenerbahce.png" alt="" class="maclogo">
+          </div>
+          <div class="depad">Fenerbahçe</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
+        </div>
+        <div class="mac">
+          <div class="tarih">18.11 17:00</div>
+          <div class="evlogo">
+            <img src="images/diger/sarıyer.png" alt="" class="maclogo">
+          </div>
+          <div class="evad">Sarıyer</div>
+          <div class="deplogo">
+            <img src="images/diger/thy.png" alt="" class="maclogo">
+          </div>
+          <div class="depad">THY</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
+        </div>
+        <div class="mac">
+          <div class="tarih">18.11 18:00</div>
+          <div class="evlogo">
+            <img src="images/diger/murat.webp" alt="" class="maclogo">
+          </div>
+          <div class="evad">Muratpaşa</div>
+          <div class="deplogo">
+            <img src="images/diger/aydin.webp" alt="" class="maclogo">
+          </div>
+          <div class="depad">Aydın</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
+        </div>
+        <div class="mac">
+          <div class="tarih">19.11 18:00</div>
+          <div class="evlogo">
+            <img src="images/diger/galatasarayy.webp" alt="" class="maclogo">
+          </div>
+          <div class="evad">Galatasaray</div>
+          <div class="deplogo">
+            <img src="images/eczacı/esk-logo.png" alt="" class="maclogo">
+          </div>
+          <div class="depad">Eczacıbaşı</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
+        </div>
+        <div class="mac">
+          <div class="tarih">21.11 15:00</div>
+          <div class="evlogo">
+            <img src="images/diger/kara.png" alt="" class="maclogo">
+          </div>
+          <div class="evad">Karayolları</div>
+          <div class="deplogo">
+            <img src="images/diger/besiktas.png" alt="" class="maclogo">
+          </div>
+          <div class="depad">Beşiktaş</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
+        </div>
+        <div class="mac">
+          <div class="tarih">21.11 15:00</div>
+          <div class="evlogo">
+            <img src="images/diger/fenerbahce.png" alt="" class="maclogo">
+          </div>
+          <div class="evad">Fenerbahçe</div>
+          <div class="deplogo">
+            <img src="images/diger/sarıyer.png" alt="" class="maclogo">
+          </div>
+          <div class="depad">Sarıyer</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
+        </div>
+        <div class="mac">
+          <div class="tarih">21.11 17:30</div>
+          <div class="evlogo">
+            <img src="images/diger/cukurova.webp" alt="" class="maclogo">
+          </div>
+          <div class="evad">Çukurova</div>
+          <div class="deplogo">
+            <img src="images/diger/ptt.webp" alt="" class="maclogo">
+          </div>
+          <div class="depad">PTT</div>
+          <div class="evskor">-</div>
+          <div class="depskor">-</div>
+        </div>
+      </div>
+      <div class="sagcontent">
+        <div class="puantable">
+          <div class="birinci">
+            <p class="sira">1.</p>
+            <p class="logo">
+              <img src="images/diger/vakif.svg" alt="" class="maclogo">
+            </p>
+            <p class="ad">Vakıfbank</p>
+            <p class="puan">23p</p>
+          </div>
+          <div class="ikinci">
+            <p class="sira">2.</p>
+            <p class="logo">
+              <img src="images/eczacı/esk-logo.png" alt="" class="maclogo">
+            </p>
+            <p class="ad">Eczacıbaşı</p>
+            <p class="puan">19p</p>
+          </div>
+          <div class="ucuncu">
+            <p class="sira">3.</p>
+            <p class="logo">
+              <img src="images/diger/fenerbahce.png" alt="" class="maclogo">
+            </p>
+            <p class="ad">Fenerbahçe</p>
+            <p class="puan">19p</p>
+          </div>
+          <div class="dorduncu">
+            <p class="sira">4.</p>
+            <p class="logo">
+              <img src="images/diger/kuzeyboru.webp" alt="" class="maclogo">
+            </p>
+            <p class="ad">Kuzey Boru</p>
+            <p class="puan">14p</p>
+          </div>
+          <div class="besinci">
+            <p class="sira">5.</p>
+            <p class="logo">
+              <img src="images/diger/thy.png" alt="" class="maclogo">
+            </p>
+            <p class="ad">THY</p>
+            <p class="puan">12p</p>
+          </div>
+          <div class="altinci">
+            <p class="sira">6.</p>
+            <p class="logo">
+              <img src="images/diger/murat.webp" alt="" class="maclogo">
+            </p>
+            <p class="ad">Muratpaşa</p>
+            <p class="puan">11p</p>
+          </div>
+          <div class="yedinci">
+            <p class="sira">7.</p>
+            <p class="logo">
+              <img src="images/diger/nilufer.webp" alt="" class="maclogo">
+            </p>
+            <p class="ad">Nilüfer</p>
+            <p class="puan">10p</p>
+          </div>
+          <div class="sekizinci">
+            <p class="sira">8.</p>
+            <p class="logo">
+              <img src="images/diger/sarıyer.png" alt="" class="maclogo">
+            </p>
+            <p class="ad">Sarıyer</p>
+            <p class="puan">10p</p>
+          </div>
+          <div class="dokuzuncu">
+            <p class="sira">9.</p>
+            <p class="logo">
+              <img src="images/diger/galatasarayy.webp" alt="" class="maclogo">
+            </p>
+            <p class="ad">Galatasaray</p>
+            <p class="puan">6p</p>
+          </div>
+          <div class="onuncu">
+            <p class="sira">10.</p>
+            <p class="logo">
+              <img src="images/diger/ptt.webp" alt="" class="maclogo">
+            </p>
+            <p class="ad">PTT</p>
+            <p class="puan">7p</p>
+          </div>
+          <div class="onbirinci">
+            <p class="sira">11.</p>
+            <p class="logo">
+              <img src="images/diger/besiktas.png" alt="" class="maclogo">
+            </p>
+            <p class="ad">Beşiktaş</p>
+            <p class="puan">6p</p>
+          </div>
+          <div class="onikinci">
+            <p class="sira">12.</p>
+            <p class="logo">
+              <img src="images/diger/aydin.webp" alt="" class="maclogo">
+            </p>
+            <p class="ad">Aydın</p>
+            <p class="puan">5p</p>
+          </div>
+          <div class="onucuncu">
+            <p class="sira">13.</p>
+            <p class="logo">
+              <img src="images/diger/cukurova.webp" alt="" class="maclogo">
+            </p>
+            <p class="ad">Çukurova</p>
+            <p class="puan">5p</p>
+          </div>
+          <div class="ondortuncu">
+            <p class="sira">14.</p>
+            <p class="logo">
+              <img src="images/diger/kara.png" alt="" class="maclogo">
+            </p>
+            <p class="ad">Karayolları</p>
+            <p class="puan">0p</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
-
-
-
-
     <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
