@@ -71,34 +71,12 @@
     </div>
   </nav>
   <h1 style="margin-top: 180px; text-align: center; color: orangered;">Anasayfa</h1>
-<!--   <button id="openModalBtn" class="btn btn-primary">Open Video Popup</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="videoModalLabel">Açtığın yolda,gösterdiğin hedefe,durmadan yürüyeceğiz...</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-                  <iframe id="video" width="100%" height="315" src="images/vestelreklampopup.mp4" frameborder="0" allowfullscreen></iframe>
-              </div>
-          </div>
-      </div>
-  </div> -->
-
-      <button id="openPopup" class="btn btn-primary">Open Video Popup</button>
-
-    <!-- Video Popup Modal -->
-    <div class="modal fade" id="videoPopupModal" tabindex="-1" role="dialog" aria-labelledby="videoPopupModalLabel"
+  <div class="modal fade" id="videoPopupModal" tabindex="-1" role="dialog" aria-labelledby="videoPopupModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="videoPopupModalLabel">Video Popup</h5>
+                    <h5 class="modal-title" id="videoPopupModalLabel">Açtığın yolda,gösterdiğin hedefe,durmadan yürüyeceğiz...</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -112,7 +90,6 @@
             </div>
         </div>
     </div>
-
   <div class="content">
     <div class="solcontent">
       <a href="mac_takvimi.html" class="daha-fazla-link">Daha Fazla</a>
@@ -408,9 +385,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   <script>
-        // Open video popup when the button is clicked
-        document.getElementById('openPopup').addEventListener('click', function () {
+    <script>
+        // Automatically open video popup when the page is loaded
+        $(document).ready(function () {
             $('#videoPopupModal').modal('show');
         });
 
