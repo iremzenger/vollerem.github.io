@@ -5,12 +5,31 @@
   grid-template-areas: "solcontent ortacontent sagcontent";
   margin: 20px;
 }
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+
+.btn-close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
+
 .solcontent {
   grid-area: solcontent;
 }
-.ortacontent{
+
+.ortacontent {
   grid-area: ortacontent;
 }
+
 .mac {
   display: grid;
   width: 98%;
@@ -23,55 +42,66 @@
   margin: 10px;
   padding: 10px;
 }
+
 .tarih {
   grid-area: tarih;
   grid-column: 1/2;
   color: #fff;
   justify-content: center;
 }
+
 .evlogo {
   grid-area: evlogo;
   grid-column: 2/3;
   color: #fff;
 }
+
 .evad {
   grid-area: evad;
   grid-column: 4/5;
   color: #fff;
 }
+
 .deplogo {
   grid-area: deplogo;
   grid-column: 2/3;
   color: #fff;
 }
+
 .depad {
   grid-area: depad;
   grid-column: 4/5;
   color: #fff;
 }
+
 .evskor {
   grid-area: evskor;
   grid-column: 6;
   color: #fff;
 }
+
 .depskor {
   grid-area: depskor;
   grid-column: 6;
   color: #fff;
 }
+
 .maclogo {
   width: 20px;
   height: 20px;
 }
+
 .sagcontent {
   grid-area: sagcontent;
   height: 100%;
 }
-.puantable > div {
+
+.puantable>div {
   display: flex;
   justify-content: space-between;
   background-color: #d2d1d1;
 }
+
 .daha-fazla-link {
   display: block;
   width: 100px;
@@ -86,15 +116,25 @@
 .sira {
   flex-basis: 25%;
 }
+
 .logo {
   flex-basis: 10%;
 }
+
 .ad {
   flex-basis: 55%;
 }
+
 .puan {
   flex-basis: 10%;
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .content {
     display: block;
