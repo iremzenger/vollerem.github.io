@@ -90,14 +90,27 @@
       </div>
   </div> -->
 
-    <button id="openPopup">Open Video Popup</button>
+      <button id="openPopup" class="btn btn-primary">Open Video Popup</button>
 
-    <div id="videoPopup" class="popup">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <video controls>
-            <source src="images/vestelreklampopup.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <!-- Video Popup Modal -->
+    <div class="modal fade" id="videoPopupModal" tabindex="-1" role="dialog" aria-labelledby="videoPopupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoPopupModalLabel">Video Popup</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video width="100%" height="315" controls>
+                        <source src="images/vestelreklampopup.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
     </div>
 
   <div class="content">
@@ -395,20 +408,21 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script>
+        // Open video popup when the button is clicked
+        document.getElementById('openPopup').addEventListener('click', function () {
+            $('#videoPopupModal').modal('show');
+        });
 
-  <script>
-document.getElementById('openPopup').addEventListener('click', function() {
-    document.getElementById('videoPopup').style.display = 'block';
-});
+        // Close video popup when the modal is closed
+        $('#videoPopupModal').on('hidden.bs.modal', function () {
+            // Optionally, you can pause the video when closing the modal
+            var video = document.querySelector('#videoPopupModal video');
+            if (video) {
+                video.pause();
+            }
+        });
 
-function closePopup() {
-    document.getElementById('videoPopup').style.display = 'none';
-}
-
-</script>
-
-
-
+    </script>
 </body>
-
 </html>
