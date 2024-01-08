@@ -397,26 +397,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
-    $(document).ready(function () {
-        // Open modal when the page is loaded
-        $("#videoModal").modal("show");
+document.getElementById('openPopup').addEventListener('click', function() {
+    document.getElementById('videoPopup').style.display = 'block';
+});
 
-        // Auto-play video when modal is shown
-        $("#videoModal").on("shown.bs.modal", function () {
-            $("#video")[0].src += "&autoplay=1";
-        });
+function closePopup() {
+    document.getElementById('videoPopup').style.display = 'none';
+}
 
-        // Stop video when modal is closed
-        $("#videoModal").on("hidden.bs.modal", function () {
-            $("#video")[0].src = $("#video")[0].src.replace("&autoplay=1", "");
-        });
-    });
 </script>
 
 
 
-
-  </script>
 </body>
 
 </html>
