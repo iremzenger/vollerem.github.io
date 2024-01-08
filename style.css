@@ -1,12 +1,15 @@
 .content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 2fr 1fr;
   gap: 10px;
-  grid-template-areas: "solcontent sagcontent";
+  grid-template-areas: "solcontent ortacontent sagcontent";
   margin: 20px;
 }
 .solcontent {
   grid-area: solcontent;
+}
+.ortacontent{
+  grid-area:ortacontent;
 }
 .mac {
   display: grid;
